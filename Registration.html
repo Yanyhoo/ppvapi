@@ -19,54 +19,63 @@
 		<div class="row">
 			<h3>Registrační formulář</h3>
 		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="row mb-4">
-				<div class="col-2">
-					<div class="form-outline">
-						<input type="text" id="name" class="form-control" />
-						<label class="form-label" for="name">Jméno</label>
+
+		<form>
+
+			<div class="row">
+				<div class="row mb-4">
+					<div class="col-2">
+						<div class="form-outline">
+							<input type="text" id="name" class="form-control" />
+							<label class="form-label" for="name">Jméno</label>
+						</div>
 					</div>
-				</div>
-				<div class="col-3">
-					<div class="form-outline">
-						<input type="text" id="surname" class="form-control" />
-						<label class="form-label" for="surname">Příjmení</label>
+					<div class="col-3">
+						<div class="form-outline">
+							<input type="text" id="surname" class="form-control" />
+							<label class="form-label" for="surname">Příjmení</label>
+						</div>
 					</div>
-				</div>
-				<div class="col-3">
-					<div class="form-outline">
-						<input type="text" id="club" class="form-control" />
-						<label class="form-label" for="club">Aeroklub</label>
+					<div class="col-3">
+						<div class="form-outline">
+							<input type="text" id="club" class="form-control" />
+							<label class="form-label" for="club">Aeroklub</label>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div><form>
-			<!-- 2 column grid layout with text inputs for the first and last names -->
-		
-	</div>
-	<hr />
-	<div class="form-outline mb-4">
-		<input type="text" id="form6Example4" class="form-control" />
-		<label class="form-label" for="form6Example4">Klub</label>
-	</div>
+			<div class="row">
+				<div class="col-3">
+					<div class="form-outline">
+						<label class="form-control" for="competionClass">Třída</label>
+						<select class="select" id="competionClass">
+							<option value="1">Klub</option>
+							<option value="2">Kombi</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="form-outline">
+						<input type="email" id="form6Example5" class="form-control" />
+						<label class="form-label" for="form6Example5">Email</label>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="form-outline">
+						<input type="number" id="form6Example6" class="form-control" />
+						<label class="form-label" for="form6Example6">Phone</label>
+					</div>
+				</div>
 
-	<!-- Email input -->
-	<div class="form-outline mb-4">
-		<input type="email" id="form6Example5" class="form-control" />
-		<label class="form-label" for="form6Example5">Email</label>
-	</div>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+				</div>
 
-	<!-- Number input -->
-	<div class="form-outline mb-4">
-		<input type="number" id="form6Example6" class="form-control" />
-		<label class="form-label" for="form6Example6">Phone</label>
-	</div>
+			</div>
 
-	
-	<!-- Submit button -->
-	<button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+	</div>
 	</form>
 	</div>
 	</div>
