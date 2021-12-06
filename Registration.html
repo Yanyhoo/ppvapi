@@ -15,22 +15,22 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container mb-4">
 		<div class="row">
-			<h3>Registrační formulář</h3>
+			<h3>PPV 2023 - Registrační formulář</h3>
 		</div>
-		<form id="registrationForm">
+		<form id="registryForm">
 			<div class="row mb-4">
 				<div class="col-3">
 					<div class="form-outline">
-						<input type="text" id="name" class="form-control" />
-						<label class="form-label" for="name">Jméno</label>
+						<input type="text" id="fname" class="form-control" />
+						<label class="form-label" for="fname">Jméno</label>
 					</div>
 				</div>
 				<div class="col-3">
 					<div class="form-outline">
-						<input type="text" id="surname" class="form-control" />
-						<label class="form-label" for="surname">Příjmení</label>
+						<input type="text" id="sName" class="form-control" />
+						<label class="form-label" for="sName">Příjmení</label>
 					</div>
 				</div>
 				<div class="col-4">
@@ -43,55 +43,53 @@
 			<div class="row">
 				<div class="col-3">
 					<div class="form-outline">
-						<input type="email" id="form6Example5" class="form-control" />
-						<label class="form-label" for="form6Example5">Email</label>
+						<input type="email" id="email" class="form-control" />
+						<label class="form-label" for="email">Email</label>
 					</div>
 				</div>
 				<div class="col-3">
 					<div class="form-outline">
-						<input type="number" id="form6Example6" class="form-control" />
-						<label class="form-label" for="form6Example6">Telefon</label>
+						<input type="number" id="phone" class="form-control" />
+						<label class="form-label" for="phone">Telefon</label>
 					</div>
 				</div>
-				<div class="col-3">
-					<input type="email" id="form6Example5" class="select" />
-					<select class="select">
-						<option value="1">One</option>
-						<option value="2">Two</option>
-					  </select>
-				</div>
+
 			</div>
 			<br>
 			<div class="row">
 				<div class="col-3">
 					<div class="form-outline">
-						<input type="text" id="airplaneType" class="form-control" />
-						<label class="form-label" for="airplaneType">Typ letadla</label>
+						<input type="text" id="glider" class="form-control" />
+						<label class="form-label" for="glider">Typ letadla</label>
 					</div>
 				</div>
 				<div class="col-2">
 					<div class="form-outline">
-						<input type="number" id="imatriculation" class="form-control" />
-						<label class="form-label" for="imatriculation">Imatrikulace</label>
+						<input type="number" id="imat" class="form-control" />
+						<label class="form-label" for="imat">Imatrikulace</label>
 					</div>
 				</div>
 				<div class="col-2">
 					<div class="form-outline">
-						<input type="number" id="startMark" class="form-control" />
-						<label class="form-label" for="startMark">Startovní znak</label>
+						<input type="text" id="code" class="form-control" />
+						<label class="form-label" for="code">Startovní znak</label>
 					</div>
 				</div>
+				<br>
 				<div class="col-2">
-					<div class="form-outline">
-						<input type="number" id="gliderClass" class="form-control" />
-						<label class="form-label" for="gliderClass">Třída (Klub/Kombi)</label>
-					</div>
+					<select class="form-select " id="gliderClass">
+						<option value="1">Klubová třída</option>
+						<option value="2">Kombinovaná třída</option>
+					</select>
 				</div>
+
+
 			</div>
 			<br>
 			<div class="row">
 				<div class="col-2">
-					<button type="submit" class="btn btn-primary btn-block mb-4">Odeslat registraci</button>
+					<button type="submit" class="btn btn-primary btn-block mb-4" id="submitBtn">Odeslat
+						registraci</button>
 				</div>
 			</div>
 		</form>
