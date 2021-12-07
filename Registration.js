@@ -21,7 +21,7 @@ function afterSubmit(e) {
 		email: email.value,
 		phone: phone.value,
 		glider: glider.value,
-		imatricualation: imat.value,
+		imatriculation: imat.value,
 		code: code.value,
 		raceclass: gliderClass.value,
 	}
@@ -36,9 +36,11 @@ function afterSubmit(e) {
 	.then(res => res.json())
 	.then(res => {
 		console.log(res);
+		registryForm.reset();
 	})
 	.catch(err => {
 		console.log(err);
+		console.log("Něco se pokazilo");
 	})
 }
 
