@@ -14,6 +14,20 @@ var submitBtn = document.getElementById("submitBtn");
 function afterSubmit(e) {
 	e.preventDefault();
 
+	if (registryForm.checkValidity() === false) {
+		e.stopPropagation();
+		for (let field of registryForm.elements) {
+			if (!field.checkValidity()) {
+				field.classList.add("is-invalid");
+			}
+		}
+		return;
+	}
+
+	for (let field of registryForm.elements) {
+		field.classList.remove("is-invalid");
+	}
+
 	var info = {
 		name: fname.value,
 		surname: sName.value,
@@ -33,15 +47,15 @@ function afterSubmit(e) {
 		body: JSON.stringify(info)
 
 	})
-	.then(res => res.json())
-	.then(res => {
-		console.log(res);
-		registryForm.reset();
-	})
-	.catch(err => {
-		console.log(err);
-		console.log("Něco se pokazilo");
-	})
+		.then(res => res.json())
+		.then(res => {
+			console.log(res);
+			registryForm.reset();
+		})
+		.catch(err => {
+			console.log(err);
+			console.log("Něco se pokazilo");
+		})
 }
 
 registryForm.addEventListener("submit", afterSubmit);
