@@ -19,14 +19,14 @@
 		<div class="row">
 			<h3>PPV 2023 - Registrační formulář</h3>
 		</div>
-		<form id="registryForm">
+		<form id="registryForm" novalidate>
 			<div class="row mb-4">
 				<div class="col-3">
 					<div class="form-outline">
 						<input type="text" id="fname" class="form-control" />
 						<label class="form-label" for="fname">Jméno</label>
 						<div class="invalid-feedback">
-							Je třeba zadat příjemní
+							Není zadné jméno
 						</div>
 					</div>
 				</div>
@@ -34,12 +34,18 @@
 					<div class="form-outline">
 						<input type="text" id="sName" class="form-control" />
 						<label class="form-label" for="sName">Příjmení</label>
+						<div class="invalid-feedback">
+							Není zadné příjmení
+						</div>
 					</div>
 				</div>
 				<div class="col-4">
 					<div class="form-outline">
 						<input type="text" id="club" class="form-control" />
 						<label class="form-label" for="club">Aeroklub</label>
+						<div class="invalid-feedback">
+							Není zadný aeroklub (je možno zadat "Není")
+						</div>
 					</div>
 				</div>
 			</div>
@@ -48,12 +54,18 @@
 					<div class="form-outline">
 						<input type="email" id="email" class="form-control" />
 						<label class="form-label" for="email">Email</label>
+						<div class="invalid-feedback">
+							Není zadný email
+						</div>
 					</div>
 				</div>
 				<div class="col-3">
 					<div class="form-outline">
 						<input type="number" id="phone" class="form-control" />
 						<label class="form-label" for="phone">Telefon</label>
+						<div class="invalid-feedback">
+							Není zadný telefon
+						</div>
 					</div>
 				</div>
 
@@ -64,18 +76,27 @@
 					<div class="form-outline">
 						<input type="text" id="glider" class="form-control" />
 						<label class="form-label" for="glider">Typ letadla</label>
+						<div class="invalid-feedback">
+							Není zadný typ letadla
+						</div>
 					</div>
 				</div>
 				<div class="col-2">
 					<div class="form-outline">
 						<input type="text" id="imat" class="form-control" />
 						<label class="form-label" for="imat">Imatrikulace</label>
+						<div class="invalid-feedback">
+							Není zadná imatrikulace
+						</div>
 					</div>
 				</div>
 				<div class="col-2">
 					<div class="form-outline">
 						<input type="text" id="code" class="form-control" />
 						<label class="form-label" for="code">Startovní znak</label>
+						<div class="invalid-feedback">
+							Není zadný startovní znak
+						</div>
 					</div>
 				</div>
 				<br>
@@ -85,8 +106,6 @@
 						<option value="2">Kombinovaná třída</option>
 					</select>
 				</div>
-
-
 			</div>
 			<br>
 			<div class="row">
