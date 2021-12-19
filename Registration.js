@@ -39,7 +39,7 @@ function afterSubmit(e) {
 		code: code.value,
 		raceclass: gliderClass.value,
 	}
-	var url = "https://script.google.com/macros/s/AKfycbz31vAWCc9mx95dfJjsIghRa4KyN9OwJG3dQvPDs130i6qr9wr5pgSNHp4hV0igIe2s/exec";
+	var url = "https://script.google.com/macros/s/AKfycbyw40My6pltrf9HvvUwvyE8JsW02DH5KMPsnAVRe1cXzRGrkE80luxex4RO1-LfNjFf/exec";
 	fetch(url, {
 		method: 'POST',
 		cache: 'no-cache',
@@ -59,4 +59,3 @@ function afterSubmit(e) {
 }
 
 registryForm.addEventListener("submit", afterSubmit);
-//https://youtu.be/3UYGAAJQXEE?t=1081
